@@ -1,5 +1,6 @@
 import React from 'react';
 import StartButton from '../../components/StartButton';
+import styled from 'styled-components';
 
 export default function LandingPage() {
   return (
