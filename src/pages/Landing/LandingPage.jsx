@@ -1,11 +1,13 @@
 import React from 'react';
-import StartButton from '../../components/StartButton';
+import StartButton from '../../components/Lading/StartButton';
+import PagenaionForLanding from '../../components/Lading/PagenationForLanding';
 import styled from 'styled-components';
 
 export default function LandingPage() {
   return (
     <PageContainer>
-      <StartButton />;
+      <PagenaionForLanding />
+      <StartButton />
     </PageContainer>
   );
 }

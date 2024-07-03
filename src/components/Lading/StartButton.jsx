@@ -6,7 +6,12 @@ export default function StartButton() {
 }
 
 const StyledButton = styled.button`
+  position: absolute;
   width: 326px;
   height: 60px;
-  background-color: #ff7a00;
+  left: 32px;
+  top: 734px;
+
+  background: #ff6600;
+  border-radius: 16px;
 `;
