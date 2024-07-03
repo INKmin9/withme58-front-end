@@ -4,7 +4,9 @@ import styled from 'styled-components';
 export default function Advertise({ image, title, content }) {
   return (
     <Container>
-      <ImageArea>{image}</ImageArea>
+      <ImageArea>
+        <img src={image} alt={title || '설명 이미지'} />
+      </ImageArea>
       <TextBox>
         <TitleArea>{title}</TitleArea>
         <ContentArea>{content}</ContentArea>
