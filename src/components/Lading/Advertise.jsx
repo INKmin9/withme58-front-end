@@ -16,7 +16,8 @@ export default function Advertise({ image, title, content }) {
 }
 
 const Container = styled.div`
-  background-color: #fff;
+  /* background-color: #fff; */
+  align-items: center;
 `;
 
 const TextBox = styled.div`

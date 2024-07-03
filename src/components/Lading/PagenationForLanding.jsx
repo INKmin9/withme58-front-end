@@ -13,11 +13,12 @@ export default function PagenaionForLanding() {
     <Container>
       <Swiper
         className="landing-add"
-        spaceBetween={50}
+        spaceBetween={260}
         slidesPerView={1}
-        navigation
+        // navigation
         pagination={{ clickable: true }}
         autoplay={{ delay: 2000 }}
+        speed={500} //슬라이더 넘어가는 속도
       >
         <SwiperSlide>
           <Advertise
