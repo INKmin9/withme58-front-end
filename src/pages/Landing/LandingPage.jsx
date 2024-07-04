@@ -1,17 +1,19 @@
 import React from 'react';
-import StartButton from '../../components/StartButton';
+import StartButton from '../../components/Lading/StartButton';
+import PagenaionForLanding from '../../components/Lading/PagenationForLanding';
 import styled from 'styled-components';
 
 export default function LandingPage() {
   return (
     <PageContainer>
-      <StartButton />;
+      <PagenaionForLanding />
+      <StartButton />
     </PageContainer>
   );
 }
 
 const PageContainer = styled.div`
-  width: 390;
-  height: 844;
+  width: 390px;
+  height: 844px;
   background-color: #fff; //나중에 깡흰색이 아니길 바랍니다
 `;
