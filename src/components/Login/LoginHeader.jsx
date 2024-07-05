@@ -26,6 +26,6 @@ const LoginHeaderDiv = styled.div`
   svg {
     position: absolute;
     left: 32px;
-    color: #535353;
+    color: var(--Grayscale-40);
   }
 `;

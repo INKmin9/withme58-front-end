@@ -14,7 +14,7 @@ const FindDiv = styled.div`
     align-items: center;
     justify-content: center;
     font-size: 14px;
-    color: #8e8e8e;
+    color: var(--Grayscale-50);
     p{
         padding: 0px 3px 0px 3px;
     }

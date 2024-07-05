@@ -19,6 +19,5 @@ export default function LoginPage() {
 const PageContainer = styled.div`
   width: 390px;
   height: 844px;
-  // background-color: #f0f; 
   position: relative;
 `;

@@ -12,13 +12,12 @@ const FindDiv = styled.div`
     display: flex;
     position: absolute;
     bottom: 53px;
-    // align-items: end;
     left: 97px;
     justify-content: center;
     font-size: 14px;
-    color: #8e8e8e;
+    color: var(--Grayscale-5);
 
     a{
-        color: #ff6600;
+        color: var(--Orange-10);
     }
 `;

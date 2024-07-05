@@ -5,9 +5,14 @@ const GlobalStyle = createGlobalStyle`
   --Orange-10: #FF6600;
   --Orange-20: #FFB280;
 
+  --Grayscale-50: #8E8E8E;
+  --Grayscale-40: #535353;
   --Grayscale-30: #A5A5A5;
   --Grayscale-20: #F3F3F3;
   --Grayscale-10: #FFF;
+
+  --Red-20: #FFE1E1;
+  --Red-10: #EA4335;
 }
 
 *{

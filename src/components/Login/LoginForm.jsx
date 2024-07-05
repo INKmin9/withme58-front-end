@@ -93,8 +93,7 @@ const LoginContainer = styled.div`
 
 const Label = styled.label`
   font-size: 14px;
-  // color: ${(props) => (props.isFocused ? '#ff6600' : '#535353')};
-  color: ${(props) => (props.loginFail?'#EA4335':(props.isFocused ? '#ff6600' : '#535353')) };
+  color: ${(props) => (props.loginFail? 'var(--Red-10)':(props.isFocused ? 'var(--Orange-10)' : 'var(--Grayscale-40)')) };
   margin: 40px 0px 0px 0px;
   
 
@@ -109,7 +108,7 @@ const LabelDiv = styled.div`
   svg {
     position: absolute;
     left: 20px;
-    color: ${(props) => (props.loginFail?'#EA4335':(props.isFocused ? '#ff6600' : '#8e8e8e')) };
+    color: ${(props) => (props.loginFail? 'var(--Red-10)':(props.isFocused ? 'var(--Orange-10)' : 'var(--Grayscale-50)')) };
   }
   
 
@@ -119,26 +118,23 @@ const Input = styled.input`
   width: 326px;
   height: 60px;
   padding: 0px 0px 0px 50px; 
-  border: ${(props) => (props.isFocused ? '2px solid #ff6600' : '0px')};
+  border: ${(props) => (props.isFocused ? '2px solid var(--Orange-10)' : '0px')};
   border-radius: 16px;
-  background-color: ${(props) => (props.isFocused ? '#fff' : '#f3f3f3')};
+  background-color: ${(props) => (props.isFocused ? 'var(--Grayscale-10)' : 'var(--Grayscale-20)')};
   font-size: 14px;
 
-  &:hover {
-    border: 2px solid #ff6600;
-    background-color: #fff;
-  }
+
 
   &:focus {
-    border: 2px solid #ff6600;
-    background-color: #fff;
+    border: 2px solid var(--Orange-10);
+    background-color: var(--Grayscale-10);
   }
 
   ${(props) =>
     props.loginFail &&
     css`
-      background-color: #FFE1E1;
-      border: 2px solid #EA4335;
+      background-color: var(--Red-20);
+      border: 2px solid var(--Red-10);
     `}
 `;
 
@@ -147,17 +143,16 @@ const ToggleVisibilityIcon = styled.div`
   right: 76px;
   margin-top: -30px;
   cursor: pointer;
-  // color: #8e8e8e;
 
   svg {
-    color: ${(props) => (props.loginFail?'#EA4335':(props.passwordVisible ? '#ff6600' : '#8e8e8e'))};
+    color: ${(props) => (props.loginFail? 'var(--Red-10)':(props.passwordVisible ? 'var(--Orange-10)' : 'var(--Grayscale-50)'))};
   }
     
 `;
 
 const Button = styled.button`
-  background-color: #a5a5a5;
-  color: white;
+  background-color: var(--Grayscale-30);
+  color: var(--Grayscale-10);
   border: none;
   border-radius: 16px;
   cursor: pointer;
@@ -169,25 +164,23 @@ const Button = styled.button`
   ${(props) =>
     props.isLoginFormValid &&
     css`
-      background-color: #ff6600;
+      background-color: var(--Orange-10);
       
     `}
 
     ${(props) =>
       props.loginFail &&
       css`
-        background-color: #ffb280;
+        background-color: var(--Orange-20);
       `}
 
-
- 
     &:hover {
-    background-color: #ffb280;
+    background-color: var(--Orange-20);
   }
 `;
 
 const ErrorDiv = styled.div`
     margin: 5px 0px 0px 0px;
     font-size: 14px;
-    color: #EA4335;
+    color: var(--Red-10);
 `
