@@ -1,14 +1,25 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import styled from 'styled-components';
 import InputField from '../../components/Signup/InputField';
+import { useNavigate } from 'react-router-dom';
 
 export default function SignupPage() {
+  const [email, setEmail] = useState('');
+  const navigate = useNavigate();
   return (
     <PageContainer>
       <Title></Title>
       <BodyContainer>
-        <InputField></InputField>
+
+        {/*이거에 맞춰서 짜셈*/}
+        <InputField type="text" labelData="이메일" value={email} onHandlerChange={(e) => setEmail(e.target.value)}/>
+        <InputField labelData="닉네임" />
+        <InputField type="password" labelData="비밀번호" />
+        <InputField labelData="비밀번호 확인" />
       </BodyContainer>
+
+      {/*로그인 화면으로 보내기 navigate(-1) -> 이전페이지로*/}
+      <button onClick={() => navigate("/login")}>로그인으로</button>
     </PageContainer>
   );
 }
@@ -29,5 +40,4 @@ const BodyContainer = styled.div`
   // background-color: #ccc; //나중에 깡흰색이아니길 바랍니다
   border: 1px solid black;
   margin: 0 auto;
-  text-align: center;
 `;
