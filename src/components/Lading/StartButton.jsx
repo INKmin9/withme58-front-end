@@ -18,12 +18,6 @@ const StyledButton = styled.button`
   color: #fff;
   /* 시작하기 */
 
-  /* position: absolute;
-width: 65px;
-height: 26px;
-left: 162px;
-top: 751px; */
-
   /* font-family: 'SF Pro Text'; */
   font-style: normal;
   font-weight: 600;
@@ -32,6 +26,6 @@ top: 751px; */
   /* identical to box height, or 144% */
   text-align: center;
   letter-spacing: -0.025em;
-
+  
   /* color: #ffffff; */
 `;

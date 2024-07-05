@@ -16,4 +16,5 @@ const PageContainer = styled.div`
   width: 390px;
   height: 844px;
   background-color: #fff; //나중에 깡흰색이 아니길 바랍니다
+  //border: 1px solid black;
 `;
