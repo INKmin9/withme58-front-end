@@ -48,7 +48,9 @@ export default function InputField({
   return (
     <Container>
       <Label isFocused={isFocused}>{labelData}</Label>
-      {iconComponent && <IconWrapper isFocused={isFocused}>{iconComponent}</IconWrapper>}
+      {iconComponent && (
+        <IconWrapper isFocused={isFocused}>{iconComponent}</IconWrapper>
+      )}
       <StyledInput
         type={
           isPasswordVisible &&
@@ -59,10 +61,11 @@ export default function InputField({
         }
         value={value}
         onChange={onHandlerChange}
-        onClick={handleFocus} 
+        onClick={handleFocus}
         onBlur={handleBlur}
         placeholder={placeholder}
-        borderColor={borderColor} 
+        borderColor={borderColor}
+        isFocused={isFocused}
       />
       {placeholder === '비밀번호를 입력해 주세요' && (
         <PasswordIconWrapper onClick={togglePasswordVisibility}>
@@ -98,13 +101,16 @@ const StyledInput = styled.input`
   width: 320px;
   height: 60px;
   border-radius: 16px;
-  border: 0px solid #fff;
+  border: 1px solid ${props => (props.isFocused ? '#ff6600' : '#fff')};
   background-color: ${props => (props.isFocused ? '#ffffff' : '#f3f3f3')};
   text-indent: 50px;
   line-height: 22px;
   font-size: 13.5px;
+  outline: none;
+
   &:focus {
-    background-color: #ffffff; // 클릭시 포커스됐을 때 배경색
+    background-color: #ffffff; 
+    border: 1px solid #ff6600; 
   }
 `;
 
