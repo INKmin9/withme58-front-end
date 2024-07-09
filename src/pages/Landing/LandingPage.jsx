@@ -12,8 +12,4 @@ export default function LandingPage() {
   );
 }
 
-const PageContainer = styled.div`
-  width: 390px;
-  height: 844px;
-  background-color: #fff; //나중에 깡흰색이 아니길 바랍니다
-`;
+const PageContainer = styled.div``;
